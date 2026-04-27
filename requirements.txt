@@ -1,0 +1,7 @@
+torch>=2.0
+diffusers>=0.30
+accelerate>=0.30
+torchvision>=0.18
+matplotlib>=3.7
+numpy>=1.24
+tqdm>=4.65
