@@ -1,0 +1,19 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# The notebook is the original experiment record; it is kept as run.
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["diffusion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff.lint.per-file-ignores]
+# torch tests call pytest.importorskip before importing project code
+"tests/*" = ["E402"]
