@@ -1,7 +1,9 @@
-torch>=2.0
-diffusers>=0.30
-accelerate>=0.30
-torchvision>=0.18
-matplotlib>=3.7
-numpy>=1.24
-tqdm>=4.65
+# Tested on Python 3.10-3.12. On Linux, plain `pip install torch` pulls the CUDA
+# build; for a CPU-only machine install torch first from the CPU index:
+#   pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0
+torchvision==0.21.0
+diffusers==0.37.1
+matplotlib==3.10.3
+numpy==2.2.6
+tqdm==4.67.1

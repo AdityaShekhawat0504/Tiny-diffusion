@@ -5,3 +5,7 @@ checkpoints/
 data/
 *.pt
 .DS_Store
+outputs/
+.venv/
+.pytest_cache/
+.ruff_cache/
